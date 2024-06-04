@@ -15,6 +15,7 @@
 -   lalu ketik git clone dan paste link yang dicopy pada tahap ke-2 tadi (contoh: git clone https://github.com/Kanero095/InventoryArnet.git)
 -   Tunggu proses kloning hingga selesai, namun pastikan koneksi internet anda bagus
 -   jika telah selesai, silahkan masuk ke folder projek lalu ketik "copy .env.example .env" lalu enter
+-   setelah itu ubah database pada file .env tersebut. pada bagian DB:CONNECTION ubah dari sqlite menjadi mysql dan hapus tanda hastag pada setiap line yang dibawahnya
 -   setelah itu ketik "composer install" lalu enter
 -   lalu ketik "php artisan key:generate" lalu enter
 -   lalu tinggal membuat database pada mysql anda, silahkan ketik "php artisan migrate" dan enter
