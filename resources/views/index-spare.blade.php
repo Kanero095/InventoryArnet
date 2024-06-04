@@ -3,6 +3,14 @@
 
     <div class="p-4 sm:ml-64">
         <div class="p-4 rounded-lg mt-16 relative overflow-x-auto shadow-md">
+            <form action="/read-spare" method="GET" class="d-flex" role="search">
+                {{-- fitur seacrh --}}
+                <input class="rounded-lg mb-3 w-52 py-0.5 p-2" type="search" name="search" placeholder="Search"
+                    aria-label="Search" autocomplete="off" value="{{ request('search') }}">
+                <button
+                    class="rounded-lg px-3 py-1 font-bold text-sm bg-[#FC5113] text-white hover:bg-white hover:text-[#FC5113]"
+                    type="submit">Search</button>
+            </form>
             <table class="table-auto">
                 <thead class="text-xs text-white uppercase bg-gray-500">
                     <tr>

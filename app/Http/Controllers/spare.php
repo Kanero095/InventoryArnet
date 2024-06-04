@@ -49,11 +49,15 @@ class spare extends Controller
         return view('input-spare');
     }
 
-    public function index_spare()
+    public function index_spare(Request $request)
     {
-        return view('index-spare',[
-            'DataSpare'=>ModelsSpare::all(),
-        ]);
+        $DataSpare=ModelsSpare::all();
+
+        if($request->has('search')){
+            $DataSpare=ModelsSpare::where('namaperangkat', 'LIKE','%' . $request->search.'%')->get();
+        }
+
+        return view('index-spare',compact('DataSpare'));
     }
 
     public function index_data()
