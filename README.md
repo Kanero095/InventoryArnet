@@ -14,7 +14,7 @@
 -   Lalu buka terminal/commands prompt anda, lalu cari lokasi directory anda akan digunakan untuk menyimpan projek
 -   lalu ketik git clone dan paste link yang dicopy pada tahap ke-2 tadi (contoh: git clone https://github.com/Kanero095/InventoryArnet.git)
 -   Tunggu proses kloning hingga selesai, namun pastikan koneksi internet anda bagus
--   jika telah selesai, silahkan ketik "copy .env.example .env" lalu enter
+-   jika telah selesai, silahkan masuk ke folder projek lalu ketik "copy .env.example .env" lalu enter
 -   setelah itu ketik "composer install" lalu enter
 -   lalu ketik "php artisan key:generate" lalu enter
 -   lalu tinggal membuat database pada mysql anda, silahkan ketik "php artisan migrate" dan enter
